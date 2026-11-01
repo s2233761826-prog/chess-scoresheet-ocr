@@ -48,7 +48,7 @@ def adopt(index,text):
 
 st.set_page_config(page_title='棋谱转 PGN',layout='wide')
 st.title('棋谱转 PGN')
-st.caption('v5 · 上传识别 → 点击候选修正 → 下载 PGN。候选结合字迹与棋规，只修改你选中的一步。')
+st.caption('上传识别 → 点击候选修正 → 下载 PGN。候选结合字迹与棋规，只修改你选中的一步。')
 u=st.file_uploader('上传完整、清晰的棋谱照片',type=['jpg','jpeg','png'])
 if u:
     digest=hashlib.sha256(u.getvalue()).hexdigest()
